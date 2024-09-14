@@ -14,7 +14,7 @@ function Skills({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="items-center justify-center relative h-screen text-center md:text-left md:flex-row xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto flex flex-col "
+      className="items-center justify-center relative h-screen text-center md:text-left md:flex-row xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto flex flex-col space-y-5"
     >
       <h3 className="absolute top-24 text-gray-500 tracking-[1rem] text-2xl uppercase">
         Skills
@@ -22,7 +22,7 @@ function Skills({}: Props) {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm ">
         Hover over a skill for current proficiency
       </h3>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="absolute top-44 grid grid-cols-4 gap-5 my-5">
         <Skill />
         <Skill />
         <Skill />

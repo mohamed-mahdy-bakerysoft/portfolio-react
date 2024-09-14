@@ -13,6 +13,8 @@ import {
 import UseEffect from "./components/UseEffect.tsx";
 import Home from "./components/pages/Home.tsx";
 import ErrorPage from "./components/pages/ErrorPage.tsx";
+import ScrollContainer from "../ScrollContainer.tsx";
+import ScrollPage from "./components/pages/ScrollPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "scroll",
+    element: <ScrollPage />,
   },
 ]);
 

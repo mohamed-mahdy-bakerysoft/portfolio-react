@@ -13,7 +13,7 @@ function Experience({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
+      className="h-screen flex relative flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center overflow-auto"
     >
       <h3 className="absolute text-sm sm:text-2xl top-24 tracking-[0.5rem] uppercase sm:tracking-[20px] text-gray-500 mb-5">
         Experience

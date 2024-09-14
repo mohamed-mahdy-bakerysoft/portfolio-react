@@ -4,9 +4,16 @@ import { useRef, useEffect } from "react";
 
 function ExpCard({}: Props) {
   const cardRef = useRef<HTMLElement>(null);
+  console.log(`Card ref ${cardRef.current?.DOCUMENT_NODE}`);
   const handleClick = () => {
-    cardRef.current?.scrollIntoView({ behavior: "smooth" });
-    console.log('Card ref curent',cardRef.current);
+    setTimeout(() => {
+      cardRef.current?.scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "nearest",
+      });
+      console.log("Card ref curent", cardRef.current);
+    }, 100);
   };
 
   useEffect(() => {
@@ -22,7 +29,7 @@ function ExpCard({}: Props) {
       onClick={handleClick}
       ref={cardRef}
       className=" mt-5 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0
-    w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200"
+    w-[20rem] md:w-[600px] xl:w-[30rem] snap-center bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200"
     >
       <img
         className=" w-32 h-32 m-5 rounded-full xl:h-[200px] object-cover object-center"
