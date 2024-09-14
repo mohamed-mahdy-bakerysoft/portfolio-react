@@ -4,8 +4,8 @@ type Props = {};
 function Projects({}: Props) {
   const projects = [1, 2, 3, 4, 5];
   return (
-    <div className="h-screen background-[#292929] items-center flex justify-center relative max-w-full mx-auto fle-col text-left md:flex-row ">
-      <h3 className="absolute top-24uppercase tracking-[1.5rem] top-24 text-gray-500 uppercase">
+    <div className="h-screen background-[#292929] items-center flex justify-center relative max-w-full mx-auto fle-col text-left md:flex-row">
+      <h3 className="absolute tracking-[1.5rem] top-24 text-gray-500 uppercase">
         Projects
       </h3>
 
