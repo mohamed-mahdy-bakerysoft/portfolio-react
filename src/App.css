@@ -62,3 +62,10 @@ p {
   padding: 1rem;
 }
 
+/* ::-webkit-scrollbar-thumb {
+  background-color: rgb(220, 61, 61);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+} */

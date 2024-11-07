@@ -22,7 +22,9 @@ export default function ContactMe({}: Props) {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData);
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    window.location.href = `mailto:diepulp@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}`;
+  };
   return (
     <div className="h-screen relative flex  flex-col text-center justify-center md:text-left ms:flex-row max-w-7xl px-10 mx-auto items-center">
       <h3 className="absolute tracking-[1.5rem] top-11 text-gray-500 uppercase">

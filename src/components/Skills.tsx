@@ -14,9 +14,9 @@ function Skills({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="items-center justify-evenly relative h-screen text-center md:text-left md:flex-row xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto flex flex-col space-y-5"
+      className="items-center justify-evenly relative h-screen text-center md:text-left md:flex-row xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto flex flex-col space-y-5 snap-x"
     >
-      <h3 className="absolute top-24 text-gray-500 tracking-[1rem] text-2xl uppercase">
+      <h3 className="absolute top-24 text-gray-500 tracking-[1rem] text-2xl uppercase underline  hover:decoration-orange">
         Skills
       </h3>
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm ">

@@ -13,12 +13,17 @@ function Experience({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex relative flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center overflow-auto"
+      className="h-screen flex relative flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center overflow-auto "
     >
       <h3 className="absolute text-sm sm:text-2xl top-24 tracking-[0.5rem] uppercase sm:tracking-[20px] text-gray-500 mb-5">
         Experience
       </h3>
-      <div className="pt-24 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+      <div className="h-screen mt-72 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a] flex space-x-5 overflow-x-scroll scroll-smooth p-10 snap-x snap-mandatory">
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
         <ExpCard />
         <ExpCard />
         <ExpCard />
